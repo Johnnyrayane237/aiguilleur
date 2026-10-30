@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité · Aiguilleur IA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="marque"><a href="./">🧭 Aiguilleur IA</a></p>
+  <h1>Règles de confidentialité</h1>
+  <p class="note">Dernière mise à jour : 30 octobre 2026</p>
+
+  <h2>À qui s'adressent ces règles</h2>
+  <p>L'Aiguilleur IA est un outil de démonstration. Il n'est connecté qu'à des comptes Google appartenant à son créateur et créés pour la démonstration. Il n'est ni vendu, ni proposé au public.</p>
+
+  <h2>Les données Google utilisées</h2>
+  <ul>
+    <li><b>Gmail</b> : lecture des e-mails reçus dans la boîte de démonstration, création de brouillons de réponse, envoi de fiches internes aux adresses de l'équipe de démonstration, gestion des libellés et de l'état « lu ».</li>
+    <li><b>Google Sheets et Google Drive</b> : création et mise à jour d'un tableur « journal » (date, expéditeur, objet, catégorie, résumé, coût de l'analyse) dans le Drive du compte de démonstration.</li>
+  </ul>
+
+  <h2>Ce que l'outil en fait</h2>
+  <ul>
+    <li>Le texte de chaque e-mail reçu, et ses pièces jointes lisibles, sont envoyés à l'API Claude d'Anthropic pour être analysés (catégorie, urgence, résumé, brouillon de réponse). Anthropic n'utilise pas les données envoyées par son API pour entraîner ses modèles, selon ses conditions commerciales.</li>
+    <li>Le résultat sert uniquement à trier l'e-mail : brouillon de réponse, fiche transmise au bon destinataire, alerte Telegram en cas d'urgence, ligne dans le journal.</li>
+    <li>Aucune donnée n'est vendue, louée, partagée à des fins publicitaires, ni utilisée pour entraîner un modèle d'IA.</li>
+  </ul>
+  <p>L'utilisation et le transfert, vers toute autre application, des informations reçues des API Google respectent le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur dans les services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
+
+  <h2>Où sont les données, et combien de temps</h2>
+  <ul>
+    <li>L'automatisation (n8n) est installée sur l'ordinateur de son créateur. L'historique des traitements y est effacé automatiquement au bout de 14 jours.</li>
+    <li>Le journal reste dans le Google Sheets du compte de démonstration, jusqu'à ce qu'il soit supprimé.</li>
+    <li>Les accès (identifiants) sont enregistrés chiffrés dans n8n.</li>
+  </ul>
+
+  <h2>Retirer l'accès</h2>
+  <p>L'accès de l'Aiguilleur IA à un compte Google peut être retiré à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:lisiere.syndic.demo@gmail.com">lisiere.syndic.demo@gmail.com</a>.</p>
+</main>
+<footer><a href="./">Accueil</a> · <a href="conditions.html">Conditions d'utilisation</a></footer>
+</body>
+</html>
